@@ -8,6 +8,9 @@ namespace TicTacToeTest
     [TestClass]
     public class BoardTest
     {
+        /// <summary>
+        /// Test the getToken method and the placeToken method
+        /// </summary>
         [TestMethod]
         public void getTokenTest()
         {
