@@ -75,10 +75,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\O.png" />
     <Content Include="Styles\Style.css" />
     <Content Include="Views\Board.ascx" />
     <Content Include="Views\Main.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Images\X.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Factories\Implementations\BoardFactory.cs" />

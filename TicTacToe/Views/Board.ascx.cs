@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TicTacToe.Model;
 
 namespace TicTacToe.Views
 {
@@ -11,7 +12,7 @@ namespace TicTacToe.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
