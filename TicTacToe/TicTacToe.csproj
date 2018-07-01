@@ -78,17 +78,24 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Board.cs" />
-    <Compile Include="Model\Coordinate.cs" />
-    <Compile Include="Model\IBoard.cs" />
-    <Compile Include="Model\ICoordinate.cs" />
-    <Compile Include="Model\ISpace.cs" />
-    <Compile Include="Model\IToken.cs" />
-    <Compile Include="Model\Space.cs" />
-    <Compile Include="Model\TeamEnum.cs" />
-    <Compile Include="Model\Token.cs" />
+    <Compile Include="Model\Factories\Implementations\BoardFactory.cs" />
+    <Compile Include="Model\Factories\Implementations\TokenFactory.cs" />
+    <Compile Include="Model\Core\Implementations\Board.cs" />
+    <Compile Include="Model\Core\Implementations\Coordinate.cs" />
+    <Compile Include="Model\Core\Implementations\Game.cs" />
+    <Compile Include="Model\Core\Interfaces\IBoard.cs" />
+    <Compile Include="Model\Core\Interfaces\ICoordinate.cs" />
+    <Compile Include="Model\Core\Interfaces\IGame.cs" />
+    <Compile Include="Model\Core\Interfaces\ISpace.cs" />
+    <Compile Include="Model\Core\Interfaces\IToken.cs" />
+    <Compile Include="Model\Core\Implementations\Space.cs" />
+    <Compile Include="Model\Enums\TeamEnum.cs" />
+    <Compile Include="Model\Core\Implementations\Token.cs" />
+    <Compile Include="Model\Factories\Interfaces\IBoardFactory.cs" />
+    <Compile Include="Model\Factories\Interfaces\ITokenFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

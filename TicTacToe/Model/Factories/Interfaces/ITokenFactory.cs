@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static TicTacToe.Model.TeamEnum;
 
 namespace TicTacToe.Model
 {
-    public interface IToken
+    public interface ITokenFactory
     {
-        Team Team { get; }
+        IToken create(Team team);
     }
 }

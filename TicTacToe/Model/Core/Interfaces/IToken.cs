@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace TicTacToe.Model
 {
-    public interface IBoard
+    public interface IToken
     {
-        IToken getToken(ICoordinate coordinate);
-        void placeToken(IToken token, ICoordinate coordinate);
+        Team Team { get; }
     }
 }

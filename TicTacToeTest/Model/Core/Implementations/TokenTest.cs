@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TicTacToe.Model;
-using static TicTacToe.Model.TeamEnum;
 
 namespace TicTacToeTest
 {
@@ -9,7 +8,7 @@ namespace TicTacToeTest
     public class TokenTest
     {
         [TestMethod]
-        public void TeamTest()
+        public void teamTest()
         {
             Team team = Team.X;
             Token token = new Token(team);

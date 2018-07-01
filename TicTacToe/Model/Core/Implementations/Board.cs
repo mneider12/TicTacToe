@@ -39,6 +39,12 @@ namespace TicTacToe.Model
 
             space.Token = token;
         }
+
+        public bool isOccupied(ICoordinate coordinate)
+        {
+            ISpace space = getSpace(coordinate);
+            return space.IsOccupied;
+        }
         #endregion
 
         private ISpace getSpace(ICoordinate coordinate)

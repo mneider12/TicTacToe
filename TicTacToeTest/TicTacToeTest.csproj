@@ -52,9 +52,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BoardTest.cs" />
-    <Compile Include="SpaceTest.cs" />
-    <Compile Include="TokenTest.cs" />
+    <Compile Include="Model\Core\Implementations\BoardTest.cs" />
+    <Compile Include="Model\Core\Implementations\CoordinateTest.cs" />
+    <Compile Include="Model\Core\Implementations\SpaceTest.cs" />
+    <Compile Include="Model\Core\Implementations\TokenTest.cs" />
+    <Compile Include="Model\Core\Implementations\GameTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

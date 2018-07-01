@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TicTacToe.Model;
-using static TicTacToe.Model.TeamEnum;
 
 namespace TicTacToeTest
 {
