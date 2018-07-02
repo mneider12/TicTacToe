@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BoardSpace.ascx.cs" Inherits="TicTacToe.Views.BoardSpace" %>
+<asp:Button ID="btn" runat="server" AlternateText="board space" onclick="btn_OnClick" CssClass="boardSpace"/>

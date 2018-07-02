@@ -77,12 +77,15 @@
   <ItemGroup>
     <Content Include="Images\O.png" />
     <Content Include="Styles\Style.css" />
-    <Content Include="Views\Board.ascx" />
+    <Content Include="Views\Board\Board.ascx" />
+    <Content Include="Views\Board\BoardRow.ascx" />
+    <Content Include="Views\Board\BoardSpace.ascx" />
     <Content Include="Views\Main.aspx" />
     <Content Include="Web.config" />
     <Content Include="Images\X.png" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\Board\BoardSpaceSelectedEventArgs.cs" />
     <Compile Include="Model\Factories\Implementations\BoardFactory.cs" />
     <Compile Include="Model\Factories\Implementations\TokenFactory.cs" />
     <Compile Include="Model\Core\Implementations\Board.cs" />
@@ -99,12 +102,26 @@
     <Compile Include="Model\Factories\Interfaces\IBoardFactory.cs" />
     <Compile Include="Model\Factories\Interfaces\ITokenFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Board.ascx.cs">
+    <Compile Include="Views\Board\Board.ascx.cs">
       <DependentUpon>Board.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\Board.ascx.designer.cs">
+    <Compile Include="Views\Board\Board.ascx.designer.cs">
       <DependentUpon>Board.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Board\BoardRow.ascx.cs">
+      <DependentUpon>BoardRow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Board\BoardRow.ascx.designer.cs">
+      <DependentUpon>BoardRow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Board\BoardSpace.ascx.cs">
+      <DependentUpon>BoardSpace.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Board\BoardSpace.ascx.designer.cs">
+      <DependentUpon>BoardSpace.ascx</DependentUpon>
     </Compile>
     <Compile Include="Views\Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>

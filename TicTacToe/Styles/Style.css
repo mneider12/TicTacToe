@@ -1,12 +1,10 @@
 ﻿.split  {
     position: fixed;
     width: 50%;
-
 }
 .boardRow {
     width: 60%;
     margin: 0 auto;
-    
 }
 .boardSpace {
     display: inline-block;

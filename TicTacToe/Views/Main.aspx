@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="TicTacToe.Views.Main" %>
-<%@ Register TagPrefix="uc" TagName="Board" Src="~/Views/Board.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Board" Src="~/Views/Board/Board.ascx" %>
 
 <!DOCTYPE html>
 

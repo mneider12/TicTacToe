@@ -8,7 +8,7 @@ using TicTacToe.Model;
 
 namespace TicTacToe.Views
 {
-    public partial class Board : System.Web.UI.UserControl
+    public partial class Board : UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
