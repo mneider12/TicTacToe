@@ -24,7 +24,7 @@ namespace TicTacToe.Views
             int column = getColumn(space);
             BoardSpaceSelectedEventArgs boardSpaceSelectedEventArgs = new BoardSpaceSelectedEventArgs(column);
             
-            BoardSpaceSelected?.Invoke(sender, boardSpaceSelectedEventArgs);
+            BoardSpaceSelected?.Invoke(this, boardSpaceSelectedEventArgs);
         }
 
         private int getColumn(BoardSpace space)
