@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="TicTacToe.Views.Main" %>
-<%@ Register TagPrefix="uc" TagName="Board" Src="~/Views/Board/Board.ascx" %>
+<%@ Register TagPrefix="ttt" Namespace="TicTacToe.Controls" Assembly="TicTacToe" %>
 
 <!DOCTYPE html>
 
@@ -12,7 +12,8 @@
     <form id="form1" runat="server">
     <div>
         <div class="split">
-            <uc:Board id="board" runat="server" />
+            <ttt:BoardTile id="tile" runat="server" />
+            <ttt:BoardTile ID="tile2" runat="server" Team="X" />
         </div>
         
     </div>

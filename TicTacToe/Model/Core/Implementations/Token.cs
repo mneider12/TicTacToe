@@ -5,6 +5,7 @@ using System.Web;
 
 namespace TicTacToe.Model
 {
+    [Serializable]
     public class Token : IToken
     {
         public Token(Team team)

@@ -5,6 +5,7 @@ using System.Web;
 
 namespace TicTacToe.Model
 {
+    [Serializable]
     public class Game : IGame
     {
         public Game(IBoardFactory boardFactory, ITokenFactory tokenFactory)
@@ -22,6 +23,10 @@ namespace TicTacToe.Model
 
         public void makeNextMove(ICoordinate coordinate)
         {
+            if (isOccupied(coordinate))
+            {
+                throw new GameRuleViolationException("Attempt to play new token in occupied space");
+            }
             IToken token = tokenFactory.create(nextTeamToPlay);
             board.placeToken(token, coordinate);
             advanceToNextTurn();

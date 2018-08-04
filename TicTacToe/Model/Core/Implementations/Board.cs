@@ -6,6 +6,7 @@ using System.Web;
 
 namespace TicTacToe.Model
 {
+    [Serializable]
     public class Board : IBoard
     {
         public Board()

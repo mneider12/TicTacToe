@@ -85,6 +85,9 @@
     <Content Include="Images\X.png" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\BoardTile.cs" />
+    <Compile Include="Controls\TicTacToeGame.cs" />
+    <Compile Include="Model\Exceptions\GameRuleViolationException.cs" />
     <Compile Include="Views\Board\BoardSpaceSelectedEventArgs.cs" />
     <Compile Include="Model\Factories\Implementations\BoardFactory.cs" />
     <Compile Include="Model\Factories\Implementations\TokenFactory.cs" />

@@ -22,12 +22,21 @@ namespace TicTacToe.Views {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// board control.
+        /// tile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::TicTacToe.Views.Board board;
+        protected global::TicTacToe.Controls.BoardTile tile;
+        
+        /// <summary>
+        /// tile2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::TicTacToe.Controls.BoardTile tile2;
     }
 }

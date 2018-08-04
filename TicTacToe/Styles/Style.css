@@ -12,3 +12,15 @@
     width: 50px;
     height: 50px;
 }
+.BoardTile {
+    display: inline-block;
+    border: 5px solid black;
+    width: 50px;
+    height: 50px;
+}
+.TeamO {
+    background: url(../Images/O.png);
+}
+.TeamX {
+    background: url(../Images//X.png);
+}

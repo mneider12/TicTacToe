@@ -12,13 +12,16 @@ namespace TicTacToe.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            IBoardFactory boardFactory = new BoardFactory();
-            ITokenFactory tokenFactory = new TokenFactory();
-            game = new Game(boardFactory, tokenFactory);
+            if (game == null)
+            {
+                IBoardFactory boardFactory = new BoardFactory();
+                ITokenFactory tokenFactory = new TokenFactory();
+                game = new Game(boardFactory, tokenFactory);
 
-            BoardRow0.BoardSpaceSelected += OnBoardSpaceSelected;
-            BoardRow1.BoardSpaceSelected += OnBoardSpaceSelected;
-            BoardRow2.BoardSpaceSelected += OnBoardSpaceSelected;
+                BoardRow0.BoardSpaceSelected += OnBoardSpaceSelected;
+                BoardRow1.BoardSpaceSelected += OnBoardSpaceSelected;
+                BoardRow2.BoardSpaceSelected += OnBoardSpaceSelected;
+            }
         }
 
         public void OnBoardSpaceSelected(object sender, BoardSpaceSelectedEventArgs eventArgs)
