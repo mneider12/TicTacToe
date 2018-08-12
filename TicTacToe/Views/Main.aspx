@@ -12,8 +12,7 @@
     <form id="form1" runat="server">
     <div>
         <div class="split">
-            <ttt:BoardTile id="tile" runat="server" />
-            <ttt:BoardTile ID="tile2" runat="server" Team="X" />
+            <ttt:BoardWeb runat="server" ID="tttBoard" />
         </div>
         
     </div>

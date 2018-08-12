@@ -85,8 +85,10 @@
     <Content Include="Images\X.png" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\BoardTile.cs" />
-    <Compile Include="Controls\TicTacToeGame.cs" />
+    <Compile Include="Controls\BoardTileClickEventArgs.cs" />
+    <Compile Include="Controls\BoardTileWeb.cs" />
+    <Compile Include="Controls\BoardWeb.cs" />
+    <Compile Include="Controls\BoardRowWeb.cs" />
     <Compile Include="Model\Exceptions\GameRuleViolationException.cs" />
     <Compile Include="Views\Board\BoardSpaceSelectedEventArgs.cs" />
     <Compile Include="Model\Factories\Implementations\BoardFactory.cs" />
